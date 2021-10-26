@@ -4,13 +4,13 @@ def distance(strand_a, strand_b):
         return 0
 
     if len(strand_a) != len(strand_b):
-        raise ValueError(".+")
+        raise ValueError("Strands must be of equal length.")
 
     if not strand_a and strand_b:
-        raise ValueError(".+")
+        raise ValueError("Strands must be of equal length.")
 
     if not strand_b and strand_a:
-        raise ValueError(".+")
+        raise ValueError("Strands must be of equal length.")
 
     difference = 0
     for i, _ in enumerate(strand_a):
